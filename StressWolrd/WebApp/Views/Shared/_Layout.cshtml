@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Stress World</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/style.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/menu.css" asp-append-version="true" />
+</head>
+<header>
+    <div class="menuBody">
+        @*//////////////Logo////////////////////*@
+       @* <a asp-controller="Home">
+            <div class="gradient-border">
+                Stress<br />Wolrd<br />awesome
+            </div>
+        </a>*@
+        <button onclick="window.location='/Home/'" class='glowing-btn'><span class='glowing-txt'>H<span class='faulty-letter'>O</span>ME</span></button>
+        @*//////////////Logo////////////////////*@
+
+        <a class="menu" a asp-controller="Colubrids">
+            <span>Colubrids</span>
+        </a>
+        <a class="menu" asp-controller="Tarantulas">
+            <span>Tarantulas</span>
+        </a>
+        <a class="menu" asp-controller="Amphibians">
+            <span>Amphibians</span>
+        </a>
+        <a class="menu" asp-controller="Lizards">
+            <span>Lizards</span>
+        </a>
+        <a class="menu" asp-controller="Geckos">
+            <span>Geckos</span>
+        </a>
+        <div class="btnLogout">
+            <a href="/Home/LogOut">
+                <span>Log Out</span>
+            </a>
+        </div>
+    </div>
+</header>
+<body>
+    <div>
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+    
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
