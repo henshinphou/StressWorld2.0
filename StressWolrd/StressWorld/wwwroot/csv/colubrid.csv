@@ -1,0 +1,4 @@
+Spicies,Morph,ImportFrom,ImportPrice,SellPrice,Sex,Size,Status,CustomerPhone,CustomerName,CustomerLocation,ImportDate,SellDate
+corn snake,amel,china,800000,1200000,male,baby,importing,0936888070,Huy,tphcm,2023/08/10,2023/08/10
+corn snake,anery,china,700000,1100000,female,baby,importing,0936888070,Huy,tphcm,2023/08/10,2023/08/10
+
